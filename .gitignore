@@ -1,0 +1,30 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+# 本地数据库及备份
+*.db
+*.sqlite
+*.sqlite3
+*.json.bak
+*.backup
+backup*/
+backups/
+*backup*.json
+*invalid*.json
+*备份*.json
+# 私人资料
+private/
+personal-data/
+uploads/
+.env

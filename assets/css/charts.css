@@ -1,0 +1,20 @@
+/* =========================================================
+   成长档案 v5 · charts.css
+   环形图 / 图例 / 条形图
+   ========================================================= */
+
+/* Donut */
+.donut-wrap { display: flex; align-items: center; gap: 16px; }
+.donut { flex: 0 0 auto; }
+.legend { flex: 1; display: flex; flex-direction: column; gap: 7px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.legend-dot { width: 10px; height: 10px; border-radius: 3px; flex: 0 0 auto; }
+.legend-item .lv { color: var(--text-soft); }
+.legend-item .ct { margin-left: auto; font-weight: 700; }
+
+/* Bars */
+.bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 13px; }
+.bar-row .name { width: 64px; flex: 0 0 auto; color: var(--text-soft); }
+.bar-track { flex: 1; height: 10px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.bar-fill { height: 100%; background: linear-gradient(90deg, #f472b6, #c084fc); border-radius: 6px; }
+.bar-row .val { width: 22px; text-align: right; font-weight: 700; }

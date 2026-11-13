@@ -1,0 +1,45 @@
+/* =========================================================
+   成长档案 v5 · base.css
+   主题变量 / 重置 / 全局基础样式
+   ========================================================= */
+:root {
+  --primary: #f472b6;
+  --primary-dark: #db2777;
+  --primary-soft: #fdeaf5;
+  --bg: #fdf3f9;
+  --card: #ffffff;
+  --text: #3a2b38;
+  --text-soft: #8a7586;
+  --text-faint: #b39fae;
+  --line: #f3e6ef;
+  --green: #10b981;
+  --red: #ef4444;
+  --shadow: 0 8px 26px rgba(196, 78, 153, 0.12);
+  --radius: 18px;
+  --gold: #f59e0b;
+  --orange: #f97316;
+  --yellow: #eab308;
+  --slate: #64748b;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(120% 60% at 50% 0%, #fde3f1 0%, rgba(253,227,241,0) 55%),
+    linear-gradient(180deg, #fdf3f9 0%, #faf1fb 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body { padding-bottom: calc(150px + var(--safe-bottom)); }
+
+#app { max-width: 540px; margin: 0 auto; min-height: 100vh; position: relative; }
